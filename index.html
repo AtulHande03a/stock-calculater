@@ -4,31 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Stocks Calculater</title>
   </head>
   <body>
     <div class="container">
       <h1>Stocks: Profit or Loss</h1>
-      <p>Check How much you gained or lost in your stocks</p>
-      <form action="">
-        <label for="initial-price"
-          >Initial Price:
-          <input type="number" name="initial-price" id="initial-price-input"
-        /></label>
-        <label for="stock-quantity"
-          >Quantity of Stocks:
-          <input type="number" name="stock-quantity" id="stock-quantity-input"
-        /></label>
-        <label for="current-price"
-          >Current Price:
-          <input type="number" name="current-price" id="current-price-input"
-        /></label>
+      <p class="user-guide">Check How much you gained or lost in your stocks</p>
+      <form action="" class="form-container">
+        <label for="initial-price">Initial Stock Price</label>
+        <input
+          type="number"
+          name="initial-price"
+          id="initial-price-input"
+          placeholder="enter bought value price"
+        />
+        <label for="stock-quantity">Quantity of Stocks:</label>
+        <input
+          type="number"
+          name="stock-quantity"
+          id="stock-quantity-input"
+          placeholder="enter quantity of stock"
+        />
+        <label for="current-price">Current Price of Stock:</label>
+        <input
+          type="number"
+          name="current-price"
+          id="current-price-input"
+          placeholder="enter current value of stocks"
+        />
         <button type="submit" id="submit-btn">Calculate</button>
       </form>
       <div id="output-container"></div>
       <p id="error-message"></p>
     </div>
+    <footer>
+      <p class="footer-heading">Connect with me on:</p>
+      <div class="social-container">
+        <ul>
+          <li>
+            <a
+              class="link"
+              target="blank"
+              href="https://github.com/AtulHande03a"
+            >
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              target="blank"
+              href="https://www.linkedin.com/in/atul-hande/"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="link"
+              target="blank"
+              href="https://mobile.twitter.com/AtulHande9"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
