@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300;500;700&display=swap");
-
+:root {
+  --color-heading: #ff9636;
+}
 *,
 ::after,
 ::before {
@@ -24,14 +26,15 @@ body {
   margin: 1rem 1rem;
   padding: 0.5re 0.5rem;
 }
-h {
+h1 {
   margin: 1rem 1rem;
-  margin-bottom: 2rem;
+
+  color: var(--color-heading);
 }
 
-p .user-guide {
+.user-guide {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
 }
 

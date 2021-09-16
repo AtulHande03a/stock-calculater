@@ -72,18 +72,18 @@ const calculateProfitLoss = (initialPrice, quantity, currentPrice) => {
     let loss = (initialPrice - currentPrice) * quantity;
     let lossPercent = (loss / initialPrice) * 100;
     showMessage(
-      `Sorry, You are currently in a loss of ${lossPercent.toFixed(
+      `Sorry, Your loss percentage is ${lossPercent.toFixed(
         2
-      )} and lost ₹${loss}`
+      )} % and lost ₹${loss}`
     );
     errorMessage.style.display = "none";
   } else if (initialPrice < currentPrice) {
     let profit = (currentPrice - initialPrice) * quantity;
     let profitPercent = (profit / initialPrice) * 100;
     showMessage(
-      `Hurray!! You are making a profit of ${profitPercent.toFixed(
+      `Hurray!! You profit percentage is ${profitPercent.toFixed(
         2
-      )} and made ₹${profit}`
+      )} % and made ₹${profit}`
     );
     errorMessage.style.display = "none";
   } else {
