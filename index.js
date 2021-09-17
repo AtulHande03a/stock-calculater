@@ -70,7 +70,7 @@ const calculateProfitLoss = (initialPrice, quantity, currentPrice) => {
   console.log(initialPrice, quantity, currentPrice);
   if (initialPrice > currentPrice) {
     let loss = (initialPrice - currentPrice) * quantity;
-    let lossPercent = (loss / initialPrice) * 100;
+    let lossPercent = ((initialPrice - currentPrice) / initialPrice) * 100;
     showMessage(
       `Sorry, Your loss percentage is ${lossPercent.toFixed(
         2
@@ -79,7 +79,7 @@ const calculateProfitLoss = (initialPrice, quantity, currentPrice) => {
     errorMessage.style.display = "none";
   } else if (initialPrice < currentPrice) {
     let profit = (currentPrice - initialPrice) * quantity;
-    let profitPercent = (profit / initialPrice) * 100;
+    let profitPercent = ((currentPrice - initialPrice) / initialPrice) * 100;
     showMessage(
       `Hurray!! You profit percentage is ${profitPercent.toFixed(
         2
